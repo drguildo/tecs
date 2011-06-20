@@ -43,8 +43,8 @@ public class HardwareSimulatorMain
 
             HardwareSimulatorApplication application =
                 new HardwareSimulatorApplication(controllerGUI, simulatorGUI,
-                                                 "bin/scripts/defaultHW.txt",
-                                                 "bin/help/hwUsage.html", "bin/help/hwAbout.html");
+                                                 "data/scripts/defaultHW.txt",
+                                                 "data/help/hwUsage.html", "data/help/hwAbout.html");
         }
         else
             new HackController(new HardwareSimulator(), args[0]);

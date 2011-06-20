@@ -29,7 +29,7 @@ public class Utilities {
     /**
      * The directory of the images.
      */
-    public static final String imagesDir = "bin/images/";
+    public static final String imagesDir = "data/images/";
 
     // The name of the font for values
     private static final String VALUE_FONT_NAME = "Monospaced";

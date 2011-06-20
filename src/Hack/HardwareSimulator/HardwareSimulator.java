@@ -53,7 +53,7 @@ public class HardwareSimulator extends HackSimulator
     private static final String COMMAND_EVAL = "eval";
     private static final String COMMAND_SETVAR = "set";
 
-    private static final File INITIAL_BUILTIN_DIR = new File("builtInChips");
+    private static final File INITIAL_BUILTIN_DIR = new File("data/builtInChips/");
 
     // null value
     private static final short NULL_VALUE = 0;

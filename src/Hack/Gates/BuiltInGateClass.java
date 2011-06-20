@@ -40,7 +40,7 @@ public class BuiltInGateClass extends GateClass {
             input.HDLError("Missing java class name");
 
         String classFileName = input.getIdentifier();
-        String fullName = GatesManager.getInstance().getBuiltInDir() + "." + classFileName;
+        String fullName = "builtInChips." + classFileName;
 
         try {
             javaGateClass = Class.forName(fullName);

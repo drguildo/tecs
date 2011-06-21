@@ -73,12 +73,13 @@ public class HDLTokenizer {
     // The source file name
     private String fileName;
 
+    private Reader input;
+
     /**
      * Constructs a new HDLTokenizer with the given file name.
      */
     public HDLTokenizer(String fileName) throws HDLException {
         this.fileName = fileName;
-        Reader input;
 
         try {
             input = new FileReader(fileName);
@@ -245,5 +246,14 @@ public class HDLTokenizer {
      */
     public void HDLError(String message) throws HDLException {
         throw new HDLException(message, fileName, parser.lineno());
+    }
+
+    public void close() {
+    	try {
+			input.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 }

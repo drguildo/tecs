@@ -113,6 +113,7 @@ public abstract class GateClass {
             HDLTokenizer input = new HDLTokenizer(fileName);
             result = readHDL(input, gateName);
             GateClasses.put(fileName, result);
+            input.close();
         }
 
         return result;

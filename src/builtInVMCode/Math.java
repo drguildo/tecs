@@ -17,7 +17,6 @@
 
 package builtInVMCode;
 
-import Hack.VMEmulator.BuiltInVMClass;
 import Hack.VMEmulator.TerminateVMProgramThrowable;
 
 /**
@@ -35,7 +34,7 @@ public class Math extends JackOSClass {
 	public static short multiply(short x, short y) {
 		return (short)(x*y);
 	}
-	
+
 	public static short divide(short x, short y)
 			throws TerminateVMProgramThrowable 	{
 		if (y == 0) {
@@ -43,15 +42,15 @@ public class Math extends JackOSClass {
 		}
 		return (short)(x/y);
 	}
-	
+
 	public static short min(short x, short y) {
 		return (x>y)?y:x;
 	}
-	
+
 	public static short max(short x, short y) {
 		return (x>y)?x:y;
 	}
-	
+
 	public static short sqrt(short x)
 			throws TerminateVMProgramThrowable {
 		if (x < 0) {

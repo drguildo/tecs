@@ -39,11 +39,10 @@ public class CPUEmulatorMain
             }
 
             CPUEmulatorGUI simulatorGUI = new CPUEmulatorComponent();
-
             ControllerGUI controllerGUI = new ControllerComponent();
-            CPUEmulatorApplication application =
-                new CPUEmulatorApplication(controllerGUI, simulatorGUI, "data/scripts/defaultCPU.txt",
-                                           "data/help/cpuUsage.html", "data/help/cpuAbout.html");
+
+            new CPUEmulatorApplication(controllerGUI, simulatorGUI, "data/scripts/defaultCPU.txt",
+			                           "data/help/cpuUsage.html", "data/help/cpuAbout.html");
         }
         else
             new HackController(new CPUEmulator(), args[0]);

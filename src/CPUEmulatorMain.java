@@ -25,26 +25,26 @@ import javax.swing.*;
  * The CPU Emulator.
  */
 public class CPUEmulatorMain {
-	/**
-	 * The command line CPU Emulator program.
-	 */
-	public static void main(String[] args) {
-		if (args.length > 1)
-			System.err.println("Usage: java CPUEmulatorMain [script name]");
-		else if (args.length == 0) {
-			try {
-				UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-			} catch (Exception e) {
-			}
+    /**
+     * The command line CPU Emulator program.
+     */
+    public static void main(String[] args) {
+        if (args.length > 1)
+            System.err.println("Usage: java CPUEmulatorMain [script name]");
+        else if (args.length == 0) {
+            try {
+                UIManager
+                        .setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+            } catch (Exception e) {
+            }
 
-			CPUEmulatorGUI simulatorGUI = new CPUEmulatorComponent();
-			ControllerGUI controllerGUI = new ControllerComponent();
+            CPUEmulatorGUI simulatorGUI = new CPUEmulatorComponent();
+            ControllerGUI controllerGUI = new ControllerComponent();
 
-			new CPUEmulatorApplication(controllerGUI, simulatorGUI,
-					"data/scripts/defaultCPU.txt", "data/help/cpuUsage.html",
-					"data/help/cpuAbout.html");
-		} else
-			new HackController(new CPUEmulator(), args[0]);
-	}
+            new CPUEmulatorApplication(controllerGUI, simulatorGUI,
+                    "data/scripts/defaultCPU.txt", "data/help/cpuUsage.html",
+                    "data/help/cpuAbout.html");
+        } else
+            new HackController(new CPUEmulator(), args[0]);
+    }
 }

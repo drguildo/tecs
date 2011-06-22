@@ -24,27 +24,27 @@ import javax.swing.*;
  * The Hardware Simulator.
  */
 public class HardwareSimulatorMain {
-	/**
-	 * The command line Hardware Simulator program.
-	 */
-	public static void main(String[] args) {
-		if (args.length > 1)
-			System.err
-					.println("Usage: java HardwareSimulatorMain [script name]");
-		else if (args.length == 0) {
-			try {
-				UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-			} catch (Exception e) {
-			}
+    /**
+     * The command line Hardware Simulator program.
+     */
+    public static void main(String[] args) {
+        if (args.length > 1)
+            System.err
+                    .println("Usage: java HardwareSimulatorMain [script name]");
+        else if (args.length == 0) {
+            try {
+                UIManager
+                        .setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+            } catch (Exception e) {
+            }
 
-			HardwareSimulatorGUI simulatorGUI = new HardwareSimulatorComponent();
-			HardwareSimulatorControllerGUI controllerGUI = new HardwareSimulatorControllerComponent();
+            HardwareSimulatorGUI simulatorGUI = new HardwareSimulatorComponent();
+            HardwareSimulatorControllerGUI controllerGUI = new HardwareSimulatorControllerComponent();
 
-			new HardwareSimulatorApplication(controllerGUI, simulatorGUI,
-					"data/scripts/defaultHW.txt", "data/help/hwUsage.html",
-					"data/help/hwAbout.html");
-		} else
-			new HackController(new HardwareSimulator(), args[0]);
-	}
+            new HardwareSimulatorApplication(controllerGUI, simulatorGUI,
+                    "data/scripts/defaultHW.txt", "data/help/hwUsage.html",
+                    "data/help/hwAbout.html");
+        } else
+            new HackController(new HardwareSimulator(), args[0]);
+    }
 }

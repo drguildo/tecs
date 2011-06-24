@@ -20,7 +20,6 @@ package Hack.VMEmulator;
 import java.util.*;
 import Hack.Utilities.*;
 import java.io.*;
-import Hack.Utilities.*;
 import Hack.Events.*;
 import Hack.ComputerParts.*;
 import Hack.Controller.*;
@@ -67,7 +66,7 @@ public class VMProgram extends InteractiveComputerPart
 	// Addresses of functions by name
 	private Hashtable functions;
 	private short infiniteLoopForBuiltInsAddress;
-	
+
     // The current index of the static variables
     private int currentStaticIndex;
 

@@ -17,10 +17,13 @@
 
 package builtInChips;
 
-import java.awt.*;
-import Hack.Gates.*;
-import Hack.Utilities.*;
-import SimulatorsGUI.*;
+import java.awt.Component;
+
+import Hack.Gates.BuiltInGateWithGUI;
+import Hack.Gates.GateException;
+import Hack.Gates.GatesManager;
+import Hack.Utilities.Definitions;
+import SimulatorsGUI.ScreenComponent;
 
 /**
 /* A 512X256 screen, implemented with 8K registers, each register represents 16 pixels.

@@ -19,6 +19,7 @@ package builtInVMCode;
 
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
+
 import Hack.VMEmulator.BuiltInVMClass;
 import Hack.VMEmulator.TerminateVMProgramThrowable;
 

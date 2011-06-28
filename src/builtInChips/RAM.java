@@ -17,10 +17,14 @@
 
 package builtInChips;
 
-import Hack.Gates.*;
-import Hack.ComputerParts.*;
-import HackGUI.*;
-import java.awt.*;
+import java.awt.Component;
+
+import Hack.ComputerParts.ComputerPartEvent;
+import Hack.ComputerParts.ComputerPartEventListener;
+import Hack.Gates.BuiltInGateWithGUI;
+import Hack.Gates.GateException;
+import Hack.Gates.GatesManager;
+import HackGUI.PointedMemoryComponent;
 
 /**
  * RAM chip of a variable size, each memory location is 16 bit-wide.

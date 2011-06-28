@@ -15,10 +15,15 @@
  * mark your changes clearly, for the benefit of others.                        *
  ********************************************************************************/
 
-import Hack.Controller.*;
-import Hack.HardwareSimulator.*;
-import SimulatorsGUI.*;
-import javax.swing.*;
+import javax.swing.UIManager;
+
+import Hack.Controller.HackController;
+import Hack.HardwareSimulator.HardwareSimulator;
+import Hack.HardwareSimulator.HardwareSimulatorApplication;
+import Hack.HardwareSimulator.HardwareSimulatorControllerGUI;
+import Hack.HardwareSimulator.HardwareSimulatorGUI;
+import SimulatorsGUI.HardwareSimulatorComponent;
+import SimulatorsGUI.HardwareSimulatorControllerComponent;
 
 /**
  * The Hardware Simulator.

@@ -17,8 +17,9 @@
 
 package Hack.CPUEmulator;
 
-import javax.swing.*;
-import Hack.ComputerParts.*;
+import javax.swing.JComponent;
+
+import Hack.ComputerParts.ComputerPartGUI;
 
 /**
  * An interface for the GUI of a computer Keyboard.

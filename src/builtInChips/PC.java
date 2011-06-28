@@ -17,10 +17,14 @@
 
 package builtInChips;
 
-import Hack.Gates.*;
-import HackGUI.*;
-import Hack.ComputerParts.*;
-import java.awt.*;
+import java.awt.Component;
+
+import Hack.ComputerParts.ComputerPartEvent;
+import Hack.ComputerParts.ComputerPartEventListener;
+import Hack.Gates.BuiltInGateWithGUI;
+import Hack.Gates.GateException;
+import Hack.Gates.GatesManager;
+import HackGUI.RegisterComponent;
 
 /**
 /* A 16-bit counter with load and reset controls.

@@ -17,11 +17,15 @@
 
 package builtInChips;
 
-import java.awt.*;
-import Hack.Gates.*;
-import Hack.Utilities.*;
-import SimulatorsGUI.*;
-import Hack.Assembler.*;
+import java.awt.Component;
+
+import Hack.Assembler.AssemblerException;
+import Hack.Assembler.HackAssemblerTranslator;
+import Hack.Gates.BuiltInGateWithGUI;
+import Hack.Gates.GateException;
+import Hack.Gates.GatesManager;
+import Hack.Utilities.Definitions;
+import SimulatorsGUI.ALUComponent;
 
 /**
 /* The ALU.  d and m are two 16-bit inputs.  The other inputs are control bits.

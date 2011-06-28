@@ -17,7 +17,7 @@
 
 package builtInChips;
 
-import Hack.Gates.*;
+import Hack.Gates.BuiltInGate;
 
 /**
  * A bitwise 1-bit Nand gate.

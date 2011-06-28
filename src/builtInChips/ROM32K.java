@@ -17,14 +17,20 @@
 
 package builtInChips;
 
-import java.awt.*;
-import Hack.Gates.*;
-import Hack.ComputerParts.*;
-import Hack.Events.*;
-import Hack.Utilities.*;
-import SimulatorsGUI.*;
-import Hack.CPUEmulator.*;
-import Hack.Assembler.*;
+import java.awt.Component;
+
+import Hack.Assembler.AssemblerException;
+import Hack.Assembler.HackAssemblerTranslator;
+import Hack.CPUEmulator.ROM;
+import Hack.ComputerParts.ComputerPartEvent;
+import Hack.ComputerParts.ComputerPartEventListener;
+import Hack.Events.ProgramEvent;
+import Hack.Events.ProgramEventListener;
+import Hack.Gates.BuiltInGateWithGUI;
+import Hack.Gates.GateException;
+import Hack.Gates.GatesManager;
+import Hack.Utilities.Definitions;
+import SimulatorsGUI.ROMComponent;
 
 /**
 /* A Read only memory of 32K registers, each 16 bit-wide.  The output is the value

@@ -17,11 +17,15 @@
 
 package builtInChips;
 
-import java.awt.*;
-import java.awt.event.*;
-import Hack.Gates.*;
-import Hack.Utilities.*;
-import SimulatorsGUI.*;
+import java.awt.Component;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import Hack.Gates.BuiltInGateWithGUI;
+import Hack.Gates.GateException;
+import Hack.Gates.GatesManager;
+import Hack.Utilities.Definitions;
+import SimulatorsGUI.KeyboardComponent;
 
 /**
 /* A Keyboard, implemented as a 16 bit register that stores the currently pressed key code.

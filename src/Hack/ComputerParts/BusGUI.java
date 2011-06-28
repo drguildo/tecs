@@ -17,7 +17,7 @@
 
 package Hack.ComputerParts;
 
-import java.awt.*;
+import java.awt.Point;
 
 /**
  * An interface for the GUI of the bus.

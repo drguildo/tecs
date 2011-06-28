@@ -69,7 +69,7 @@ public interface VMProgramGUI extends InteractiveComputerPartGUI {
      * Hides the displayed message.
      */
     public void hideMessage();
-	
+
 	/**
 	 * Displays a confirmation window asking the user permission to
 	 * use built-in vm functions

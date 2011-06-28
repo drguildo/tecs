@@ -534,7 +534,7 @@ public class CPU {
 		callFunction(program.getAddress(functionName), (short)params.length,
 					 functionName, true);
 	}
-	
+
     /**
      * Calls a function according to the given function number stating
      * that the given number of arguments have been pushed onto the stack

@@ -57,7 +57,7 @@ class JackOSClass extends BuiltInVMClass {
 	 * using String.appendChar.
 	 * Returns the VM address to the Jack String.
 	 */
-	public static short javaStringToJackStringUsingVM(java.lang.String javaStr) 
+	public static short javaStringToJackStringUsingVM(java.lang.String javaStr)
 			throws TerminateVMProgramThrowable {
 		if (javaStr.length() == 0) {
 			return callFunction("String.new", 1);
@@ -74,11 +74,11 @@ class JackOSClass extends BuiltInVMClass {
 	/**
 	 * Converts a Jack string to a Java String by using whatever implementation
 	 * of the Jack class String is available (String.vm if available, else
-	 * built-in) calling String.length and then consecutively calling 
+	 * built-in) calling String.length and then consecutively calling
 	 * String.getChar
 	 */
 	/*
-	public static java.lang.String jackStringToJavaStringUsingVM(short jackStr) 
+	public static java.lang.String jackStringToJavaStringUsingVM(short jackStr)
 			throws TerminateVMProgramThrowable {
 		StringBuffer javaStr = new StringBuffer();
 		int l = callFunction("String.length", jackStr);

@@ -62,7 +62,7 @@ public class BuiltInFunctionsRunner implements Runnable {
 
 	// The built-in dir
 	private File builtInDir;
-	
+
 	/********************** Code common to both threads *****/
 
 	/**
@@ -141,7 +141,7 @@ public class BuiltInFunctionsRunner implements Runnable {
 			// new are implemented by Java functions named NEW.
 			methodName = "NEW";
 		}
-		
+
 		// Find the implementing class
 		Class implementingClass;
 		try {
@@ -186,7 +186,7 @@ public class BuiltInFunctionsRunner implements Runnable {
 		programToBuiltIn.request = CALL_REQUEST;
 		programToBuiltIn.params = requestParams;
 		programToBuiltIn.functionObject = functionObject;
-			
+
 		sendBuiltInRequestAndWaitForAnswer();
 	}
 

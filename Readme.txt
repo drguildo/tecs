@@ -14,42 +14,6 @@ MIT Press 2005. If you modify the contents of this file, please document and
 mark your changes clearly, for the benefit of others.
 
 
-Contents
---------
-
-1. Directory Structure and Compilation Instructions
-2. The Chip API for Implementation of Chips in Java
-3. The VMCode API for Implementation of VM Functions/Classes in Java
-
-
-Directory Structure and Compilation Instructions:
--------------------------------------------------
-
-InstallDir - the installation directory of the software suite
-             (to which the compiled code should be copied)
-
-HackPackageSource - should be compiled and zipped into Hack.jar and
-                    coppied to InstallDir/bin/lib
-
-HackGUIPackageSource - should be compiled and zipped into HackGUI.jar and
-                       coppied to InstallDir/bin/lib
-
-CompilersPackageSource - should be compiled and zipped into Compilers.jar and
-                         coppied to InstallDir/bin/lib
-
-SimulatorsPackageSource - should be compiled and zipped into Simulators.jar and
-                          coppied to InstallDir/bin/lib
-
-SimulatorsGUIPackageSource - should be compiled and zipped into
-                             SimulatorsGUI.jar and coppied to InstallDir/bin/lib
-
-BuiltInChipsSource - should be compiled and copied to InstallDir/builtInChips
-
-BuiltInVMCodeSource - should be compiled and copied to InstallDir/builtInVMCode
-
-MainClassesSource - should be compiled and copied to InstallDir/bin/classes
-
-
 The Chip API for Implementation of Chips in Java
 ------------------------------------------------
 
